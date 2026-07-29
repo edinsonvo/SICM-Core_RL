@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+title: SICM Core
+authors:
+  - family-names: Valencia Omaña
+    given-names: Edinson Patrocinio
+    email: edvalenciao@unal.edu.co
+version: 1.0.0-alpha.1
