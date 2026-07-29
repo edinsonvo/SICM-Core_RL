@@ -1,19 +1,18 @@
 """
-Excepciones del proyecto.
+Project exceptions.
 """
 
-
 class SICMError(Exception):
-    """Clase base de excepciones."""
+    """Base exception."""
 
 
-class ModelNotFoundError(SICMError):
-    """Modelo económico no registrado."""
-
-
-class InvalidScenarioError(SICMError):
-    """Escenario inválido."""
+class ValidationError(SICMError):
+    """Validation error."""
 
 
 class SolverError(SICMError):
-    """Error durante la resolución."""
+    """Solver error."""
+
+
+class ModelNotFoundError(SICMError):
+    """Unknown model."""
