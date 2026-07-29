@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sicm-core"
+version = "1.0.0a1"
+description = "Sistema Interactivo de Simulación Macroeconómica"
+readme = "README.md"
+requires-python = ">=3.11"
+
+authors = [
+    { name = "Patrocinio Valencia", email = "edvalenciao@unal.edu.co" }
+]
+
+license = { text = "MIT" }
+
+keywords = [
+    "macroeconomics",
+    "economics",
+    "simulation",
+    "islm",
+    "mundell-fleming"
+]
+
+dependencies = [
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "scipy>=1.13"
+]
