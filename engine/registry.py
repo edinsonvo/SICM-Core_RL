@@ -1,1 +1,5 @@
+class Registry:
 
+    _models = {}
+
+    ...
