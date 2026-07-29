@@ -1,30 +1,45 @@
 [build-system]
-requires = ["setuptools>=69", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
 
 [project]
 name = "sicm-core"
 version = "1.0.0a1"
-description = "Sistema Interactivo de Simulación Macroeconómica"
+
+description = "Scientific Interactive Macroeconomic Simulation Core"
+
 readme = "README.md"
+
 requires-python = ">=3.11"
 
+license = {text = "MIT"}
+
 authors = [
-    { name = "Patrocinio Valencia", email = "edvalenciao@unal.edu.co" }
-]
-
-license = { text = "MIT" }
-
-keywords = [
-    "macroeconomics",
-    "economics",
-    "simulation",
-    "islm",
-    "mundell-fleming"
+  {name="Patrocinio Valencia",
+   email="edvalenciao@unal.edu.co"}
 ]
 
 dependencies = [
     "numpy>=2.0",
-    "pandas>=2.2",
-    "scipy>=1.13"
+    "scipy>=1.13",
+    "pandas>=2.2"
+]
+
+[project.optional-dependencies]
+
+dev = [
+
+    "pytest",
+
+    "pytest-cov",
+
+    "ruff",
+
+    "mypy",
+
+    "mkdocs",
+
+    "mkdocs-material",
+
+    "pre-commit"
 ]
