@@ -1,5 +1,9 @@
 class Engine:
 
+    def __init__(self):
+
+        self.pipeline = Pipeline()
+
     def run(
 
         self,
@@ -8,4 +12,10 @@ class Engine:
 
     ):
 
-        pass
+        context = ExecutionContext(
+            experiment=experiment
+        )
+
+        return self.pipeline.execute(
+            context
+        )
